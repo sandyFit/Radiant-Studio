@@ -13,7 +13,7 @@ const Submenu = () => {
 
 
     return (
-        <article className='xl:hidden relative space-y-8 p-6'>
+        <article className='lg:hidden relative space-y-8 p-6'>
             <button className="rounded p-1 text-spanishBlue border-2 border-spanishBlue hover:bg-cyan-400 
                   hover:text-zinc-50 transition-colors focus:ring-2 focus:ring-slate-400"
                 onClick={toggleSubMenu}
@@ -34,7 +34,7 @@ const Submenu = () => {
                     </ScrollLink>
                 </li>
 
-                <li className='block px-3 pb-6 rounded-md text-spaceCadet font-medium space-x-4
+                <li className='px-3 pb-6 rounded-md text-spaceCadet font-medium space-x-4
                     hover:text-slate-600'>
                     <LocalHospitalRounded/>
                     <ScrollLink to='services' smooth={true} duration={500}>
