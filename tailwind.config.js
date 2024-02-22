@@ -31,7 +31,8 @@ export default {
       fontFamily: {
         sans: ['Quicksand', 'sans-serif'],
         bai: ['Bai Jamjuree' , 'sans-serif'],
-        cursive: ['WindSong', 'cursive']
+        cursive: ['WindSong', 'cursive'],
+        inter: ["Inter", 'sans-serif']
       },
 
       backgroundImage: {

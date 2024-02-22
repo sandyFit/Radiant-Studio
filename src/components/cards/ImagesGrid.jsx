@@ -22,11 +22,11 @@ const ImagesGrid = () => {
 
                     return (
                         <li key={index} className='list-none p-2 bg-transparent'>
-                            <div className={`p-4 bg-white shadow-lg transform ${index % 2 === 0 ? 'rotate-3' : '-rotate-1'}`}>
+                            <div className={`p-4 bg-white shadow-lg shadow-slate-900 transform ${index % 2 === 0 ? 'rotate-3' : '-rotate-1'}`}>
                                 <div className="image-container">
                                     {/* Apply the calculated delay as an inline style */}
                                     <div
-                                        className={`curtain ${index % 2 === 0 ? 'bg-cyan-200' : 'bg-pink-200'}`}
+                                        className={`curtain bg-slate-600 opacity-95`}
                                         style={{ animationDelay }}
                                     ></div>
                                     <img src={src} alt={`Image ${index}`} className="w-full"/>

@@ -16,10 +16,10 @@ const Hero = () => {
             style={{ minHeight: `calc(100vh - 170px)` }}>
             
             <article className='grid content-start space-y-12 w-full place-self-center ml-[20rem] lg:px-0 pb-[5rem]'>
-                <h1 className='text-[2.7rem] md:text-7xl lg:text-8xl text-white font-bold w-full max-w-12 
+                <h1 className='text-[2.7rem] md:text-7xl lg:text-[5.2rem] text-white font-bold w-full max-w-12 
                 leading-[3rem]'>
                 <span >
-                    Unveal
+                    Reveal
                     <span className='app-title' style={{ margin: ' 0 1rem' }}>
                     Your Brightest 
                     </span>
@@ -47,7 +47,7 @@ const Hero = () => {
                         <div className="flex flex-col justify-center text-blue-100">             
                             <p className='text-xl font-semibold'>100 +</p>
                             <Stars/>
-                            <p className='text-sm'>Positive Reviews</p>
+                            <p className='text-sm'>Verified Reviews</p>
                         </div>
                     </div>
 
