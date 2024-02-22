@@ -35,7 +35,11 @@
     overflow: hidden;
 }
 
-
+.app-title {
+        background: linear-gradient( rgba(6,147,227,1), rgb(155,81,224));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
 
 
 /*===================================================*/
@@ -55,7 +59,6 @@
     .button {
         @apply text-center font-bold tracking-widest focus:outline-none border-2 rounded-lg text-xl uppercase;
     }
-
     .gradient-border {
         position: relative;
     }
@@ -74,7 +77,7 @@
 
 @layer utilities {   
 
-
+    
     .btn-filled {
         @apply button text-white bg-custom-gradient-btn hover:bg-transparent  border-spanishBlue 
              shadow-xl shadow-midnight

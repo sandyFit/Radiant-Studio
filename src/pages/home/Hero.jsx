@@ -20,14 +20,15 @@ const Hero = () => {
                 leading-[3rem]'>
                 <span >
                     Unveal
-                    <span className='text-spanishBlue' style={{ margin: ' 0 1rem' }}>
+                    <span className='app-title' style={{ margin: ' 0 1rem' }}>
                     Your Brightest 
                     </span>
                 </span>
                     Smile
                 </h1>
                 <p className='text-spanishBlue text-lg md:text-xl lg:text-2xl font-medium w-[45rem]'>
-                    Let us take care of your teeth. Our dedicated team of professionals is committed to providing you with top-notch dental care.
+                    Let us take care of your teeth. Our dedicated team of professionals is committed to providing you
+                    with first-class dental care.
                 </p>
  
                 <div className="flex gap-10">
@@ -38,13 +39,13 @@ const Hero = () => {
                         </div>
                     </button>
 
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-2">
                         <div className="flex">
-                            <img src="/icons/google-logo-9822.png" alt="Google logo" className='w-20'/>
+                            <img src="/icons/google.png" alt="Google logo" className='w-20'/>
                         </div>
 
                         <div className="flex flex-col justify-center text-blue-100">             
-                            <h4 className='text-xl font-semibold'>100 +</h4>
+                            <p className='text-xl font-semibold'>100 +</p>
                             <Stars/>
                             <p className='text-sm'>Positive Reviews</p>
                         </div>
