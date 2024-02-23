@@ -1,10 +1,45 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import MotionText from '../../components/ui/MotionText'
+import { Element, animateScroll as scroll } from 'react-scroll';
+import { ArrowUpward } from '@mui/icons-material';
 
 const About = () => {
+
+    const [showFloatingBtn, setShowFloatingBtn] = useState(false);
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+
+        // Adjust the scroll threshold based on your layout
+        const scrollThreshold = 600;
+
+        if (scrollPosition > scrollThreshold) {
+        setShowFloatingBtn(true);
+        } else {
+        setShowFloatingBtn(false);
+        }
+    };
+
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    }
+
+  useEffect(() => {
+    // Add event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     return (
-        <section className='flex flex-col py-[3rem] bg-custom-gradient-bg-inverse'>
-            <MotionText/>
+        <Element className='flex flex-col py-[3rem] bg-custom-gradient-bg-inverse'>
+            <MotionText part1={'Welcome to'}
+                part2={'Radiant Dental'}
+                part3={'Studio'}
+            />
             <div className="relative py-[6rem] flex justify-center items-center">
                 
                 <img src="/images/dots.png" alt="dots" className='absolute w-72 left-24 bottom-2 opacity-25' />
@@ -14,7 +49,16 @@ const About = () => {
                     <img src="/images/dental-studio.jpg" alt="Dental Studio" className='' />
                 </article>
 
-                <article className='flex flex-col justify-center items-center'>
+                <article className='flex flex-col justify-center items-center relative'>
+
+                    <button onClick={scrollToTop}
+                        className={`fixed p-5 left-[110rem] top-[50rem] group inline-flex  items-center 
+                            justify-center overflow-hidden rounded-full bg-slate-500 ${showFloatingBtn ? '' : 'invisible'}`}>
+                        <div className="transition duration-300 group-hover:rotate-[360deg] text-spaceCadet">
+                            <ArrowUpward style={{fontSize: '3rem'}}/>
+                        </div>
+                    </button>
+
                     <h2 className='text-center text-white3 text-3xl md:text-5xl xl:text-6xl font-bold
                         w-2/3 lg:w-2/4 xl:w-2/4 2xl:w-3/5'>
                         Service and Safety is Our
@@ -36,7 +80,7 @@ const About = () => {
                     </p>
                 </article>
             </div>
-        </section>
+        </Element>
     )
 }
 

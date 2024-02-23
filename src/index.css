@@ -41,12 +41,6 @@
 }
 
 
-.fade {
-    animation: fadeInCurtain ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
 .image-container {
     position: relative;
     overflow: hidden;
@@ -55,7 +49,7 @@
 /*========= Gradient Text ========*/
 
 .app-title {
-        background: linear-gradient( rgba(6,147,227,1), rgb(155,81,224));
+        background: linear-gradient( rgb(34, 147, 252) 0%, rgb(155,81,224) 90%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }

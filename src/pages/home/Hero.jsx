@@ -41,10 +41,10 @@ const Hero = () => {
 
                     <div className="flex items-center gap-2">
                         <div className="flex">
-                            <img src="/icons/google.png" alt="Google logo" className='w-20'/>
+                            <img src="/icons/google.png" alt="Google logo" className='w-16'/>
                         </div>
 
-                        <div className="flex flex-col justify-center text-blue-100">             
+                        <div className="flex flex-col justify-center text-blue-100 h-16">             
                             <p className='text-xl font-semibold'>100 +</p>
                             <Stars/>
                             <p className='text-sm'>Verified Reviews</p>

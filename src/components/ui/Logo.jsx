@@ -8,7 +8,11 @@ const Logo = () => {
                 {/* <img src="./logo.png" alt="Radiant's logo" className='h-16' /> */}
                 <div className='flex flex-col'>
                     <span className="text-4xl font-bai uppercase font-bold text-azure tracking-[.5em]">Radiant</span>
-                    <span className='text-base text-right pr-4 font-medium uppercase text-white'>Dental Studio</span>
+                    {/* <hr className='border-1 border-azure w-[95%]' /> */}
+                    <div className="flex justify-center items-center gap-2">
+                        <hr className='border-1 border-azure w-[40%]'/>
+                        <span className='text-base text-right pr-4 font-medium uppercase tracking-widest text-white'>Dental Studio</span>
+                    </div>
                 </div>
             </Link>
         </div>

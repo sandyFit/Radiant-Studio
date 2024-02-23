@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 
 const ImagesGrid = () => {
@@ -22,7 +22,8 @@ const ImagesGrid = () => {
 
                     return (
                         <li key={index} className='list-none p-2 bg-transparent'>
-                            <div className={`p-4 bg-white shadow-lg shadow-slate-900 transform ${index % 2 === 0 ? 'rotate-3' : '-rotate-1'}`}>
+                            <div className={`p-4 bg-white shadow-lg shadow-slate-900 transform 
+                                ${index % 2 === 0 ? 'rotate-3' : '-rotate-1'}`}>
                                 <div className="image-container">
                                     {/* Apply the calculated delay as an inline style */}
                                     <div
