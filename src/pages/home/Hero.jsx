@@ -11,7 +11,7 @@ const Hero = () => {
     }
 
     return (
-        <section className='bg-custom-gradient-bg grid lg:grid-cols-2 2xl:grid-cols-2 relative items-center 
+        <section className='bg-custom-gradient-bg-left grid lg:grid-cols-2 2xl:grid-cols-2 relative items-center 
             justify-center px-8'
             style={{ minHeight: `calc(100vh - 170px)` }}>
             

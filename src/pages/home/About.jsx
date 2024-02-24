@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MotionText from '../../components/ui/MotionText'
 import { Element, animateScroll as scroll } from 'react-scroll';
-import { ArrowUpward } from '@mui/icons-material';
+import { ArrowUpward, Menu } from '@mui/icons-material';
 
 const About = () => {
 
@@ -11,7 +11,7 @@ const About = () => {
         const scrollPosition = window.scrollY;
 
         // Adjust the scroll threshold based on your layout
-        const scrollThreshold = 600;
+        const scrollThreshold = 1200;
 
         if (scrollPosition > scrollThreshold) {
         setShowFloatingBtn(true);
@@ -35,7 +35,7 @@ const About = () => {
     };
   }, []);
     return (
-        <Element className='flex flex-col py-[3rem] bg-custom-gradient-bg-inverse'>
+        <Element className='flex flex-col py-[3rem] bg-custom-gradient-bg-inverse-left'>
             <MotionText part1={'Welcome to'}
                 part2={'Radiant Dental'}
                 part3={'Studio'}
@@ -50,6 +50,13 @@ const About = () => {
                 </article>
 
                 <article className='flex flex-col justify-center items-center relative'>
+
+                    <button
+                        className={`fixed p-5 bg-slate-500 top-12 right-[110rem] rounded-full text-spaceCadet
+                            ${showFloatingBtn ? '' : 'invisible'} `}
+                    >
+                        <Menu style={ {fontSize: '3rem'}} />
+                    </button>
 
                     <button onClick={scrollToTop}
                         className={`fixed p-5 left-[110rem] top-[50rem] group inline-flex  items-center 
@@ -68,7 +75,8 @@ const About = () => {
                         
                     </h2>
 
-                    <p className='text-lg md:text-xl xl:text-2xl text-white3 font-medium mt-8 w-3/4 lg:w-2/4 xl:w-2/4 2xl:w-3/5'>
+                    <p className='text-lg md:text-xl xl:text-2xl text-white3 font-medium mt-8 w-3/4 
+                        lg:w-2/4 xl:w-2/4 2xl:w-3/5'>
                         At Radiant Dental Studio, your well-being is our top priority. We cultivate robust dentist-patient
                         relationships by prioritizing your needs.
                         <br/><br/>
