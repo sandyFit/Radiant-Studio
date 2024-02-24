@@ -1,7 +1,7 @@
 import { Add } from '@mui/icons-material';
 import React from 'react'
 
-const ServicesCard = ({iconSrc, title, description}) => {
+const ServicesCard = ({iconSrc, title, description, onClick}) => {
     return (
         <article className='flex '>
             <div className=" flex items-center hover:bg-spaceCadet w-[32rem] h-[16rem]
@@ -9,7 +9,9 @@ const ServicesCard = ({iconSrc, title, description}) => {
 
                 
                 <button className="absolute bg-custom-gradient-btn left-[29rem] -bottom-[2.2rem] shadow-xl 
-                    shadow-slate-800 p-6 rounded-full text-white3 ">
+                    shadow-slate-800 p-6 rounded-full text-white3"
+                    onClick={onClick}
+                >
                     <Add style={{fontSize: '3rem'}}/>
                 </button>
                 <div className="w-full">                  

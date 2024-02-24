@@ -1,11 +1,36 @@
-import React from 'react'
-import ServicesCard from '../../components/cards/ServicesCard';
+import React, { useState } from 'react'
 import servicesCardData from '../../data/servicesCardData.json';
+import services from '../../data/services'
+import ServicesCard from '../../components/cards/ServicesCard';
+import ModalServices from '../../components/cards/ModalServices';
 
 const Services = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedService, setSelectedService] = useState(null);
+
+    const openModal = (service) => {
+
+        console.log('Opening modal with service:', service); 
+        
+        if (service) {
+            // find the full service data, including categories
+            const fullServiceData = services.find(s => s.title === service.title);
+            if (fullServiceData) {
+                setSelectedService(fullServiceData);
+            }
+            else {
+                setSelectedService(service);
+            }
+            setIsModalOpen(true);
+        }
+    }
+        
+
+
     return (
         <section className='flex justify-center bg-custom-gradient-bg-right py-12'>
-            <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-8 relative">
                 <h2 className='text-center text-white3 text-3xl md:text-6xl font-bold w-2/3 
                     lg:w-2/4 xl:w-2/4 2xl:w-4/5 pt-20 lg:pt-4' data-aos="fade-up">
                     Discover Our Exceptional  
@@ -28,9 +53,20 @@ const Services = () => {
                                 iconSrc={service.iconSrc}
                                 title={service.title}
                                 description={service.description}
+                                onClick={() => openModal(service)}
                             />
                         </div>
                     ))}
+                </article>
+
+                <article className='absolute'>
+                    {isModalOpen && selectedService && (
+                        <ModalServices
+                            isOpen={isModalOpen}
+                            onClose={() => setIsModalOpen(false)}
+                            service={selectedService}
+                        />
+                    )}
                 </article>
 
             </div>             
@@ -40,3 +76,4 @@ const Services = () => {
 }
 
 export default Services;
+
