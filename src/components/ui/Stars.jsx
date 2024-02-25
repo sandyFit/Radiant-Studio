@@ -6,11 +6,11 @@ const Stars = () => {
         <div className='space-x-2'>
             <span className='font-bold'>
                 {[...Array(5)].map((_, index) => (
-                    <StarIcon key={index} style={{fontSize: '1rem'}} />
+                    <StarIcon key={index} />
                 ))}
             </span>
         </div>
     )
 }
 
-export default Stars
+export default Stars;

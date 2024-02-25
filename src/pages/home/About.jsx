@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import MotionText from '../../components/ui/MotionText'
 import { Element, animateScroll as scroll } from 'react-scroll';
-import { ArrowUpward, Menu } from '@mui/icons-material';
+import { ArrowUpward, Close, Menu } from '@mui/icons-material';
+import MenuCurtain from '../../components/cards/MenuCurtain';
 
 const About = () => {
 
     const [showFloatingBtn, setShowFloatingBtn] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
@@ -23,6 +25,10 @@ const About = () => {
 
     const scrollToTop = () => {
         scroll.scrollToTop();
+    }
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     }
 
   useEffect(() => {
@@ -51,16 +57,30 @@ const About = () => {
 
                 <article className='flex flex-col justify-center items-center relative'>
 
-                    <button
-                        className={`fixed p-5 bg-slate-500 top-12 right-[110rem] rounded-full text-spaceCadet
-                            ${showFloatingBtn ? '' : 'invisible'} `}
-                    >
-                        <Menu style={ {fontSize: '3rem'}} />
+                    <button onClick={toggleMenu}
+                        className={`fixed p-5 top-8 right-[110rem] group inline-flex items-center 
+                            justify-center overflow-hidden rounded-full bg-white3 bg-opacity-30 
+                            z-10 ${showFloatingBtn ? '' : 'invisible'} `}>
+                        <div className={`transition duration-300 text-spaceCadet ${isMenuOpen ? 'rotate-icon' : ''}`}>
+                            {isMenuOpen ? <Close style={{fontSize: '3rem'}} /> : <Menu style={{fontSize: '3rem'}} />}
+                        </div>
                     </button>
+
+                
+                    <div className={`${showFloatingBtn ? '' : 'invisible'}`}>                       
+                        {isMenuOpen && (
+                            <MenuCurtain isMenuOpen={isMenuOpen}
+                                
+                            />
+                        
+                        )}
+                    </div>
+                        
 
                     <button onClick={scrollToTop}
                         className={`fixed p-5 left-[110rem] top-[50rem] group inline-flex  items-center 
-                            justify-center overflow-hidden rounded-full bg-slate-500 ${showFloatingBtn ? '' : 'invisible'}`}>
+                            justify-center overflow-hidden rounded-full bg-white3 bg-opacity-30
+                            ${showFloatingBtn ? '' : 'invisible'}`}>
                         <div className="transition duration-300 group-hover:rotate-[360deg] text-spaceCadet">
                             <ArrowUpward style={{fontSize: '3rem'}}/>
                         </div>

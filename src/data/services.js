@@ -14,7 +14,7 @@ const services =[
             },
             {
                 name: "Gum Desease",
-                description: "We pay close attention to your gums at your examination. \nIf we notice any signs of gum disease we will alert you to this and provide you with advice on how to address it."
+                description: "We pay close attention to your gums at your examination. \n\nIf we notice any signs of gum disease we will alert you to this and provide you with advice on how to address it."
             },
             {
                 name: "Fillings",

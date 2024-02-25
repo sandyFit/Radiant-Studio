@@ -3,11 +3,12 @@ import Hero from './Hero';
 import About from './About';
 import Services from './Services';
 import Team from './Team';
+import Reviews from './Reviews';
 
 const Home = () => {
     return (
         <div>
-            <section>        
+            <section id='hero'>        
                 <Hero />
             </section>
             <section id="about">
@@ -18,6 +19,9 @@ const Home = () => {
             </section>
             <section id="team">
                 <Team/>
+            </section>
+            <section id="reviews">
+                <Reviews/>
             </section>
         </div>
     )

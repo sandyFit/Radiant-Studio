@@ -9,6 +9,78 @@
     text-shadow: 2px 2px 4px rgba(29, 52, 93, 0.8);
 }
 
+/* Rotate Menu curtain icon */
+
+.rotate-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Custom carousel adjustments */
+
+.custom-carousel-item {
+  flex: 1 0 auto; /* This makes sure that the item can grow and shrink but not beyond its content */
+  width: calc(33.333% - 20px); /* Adjust the 20px if you need more or less space between items */
+  margin: 0 10px; /* This creates some space between items, adjust as needed */
+}
+
+
+.carousel .slide {
+  margin: 0 50px; /* Adjust based on your needs */
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.custom-carousel-container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Adjust arrow positions */
+.carousel .control-prev.control-arrow {
+  left: 0;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.carousel .control-next.control-arrow {
+  right: 0;
+  transform: translateX(100%) translateY(-50%);
+}
+
+
+
+
+/* ========= MENU CURTAIN ANIMATION TO OPEN AND CLOSE=======
+
+Base positioning */
+.menu-article {
+  position: fixed;
+  top: 0;
+  left: 0; /* Start from the left */
+  width: 50rem;
+  height: calc(100vh - 40px);
+  margin: 20px;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+  transform: translateX(-100%); /* Initially hide off-screen */
+}
+
+
+/* Shown state */
+.menu-article-open {
+  transform: translateX(0); /* Show the menu */
+}
+
+/* Hidden state - might be redundant as the base class already hides the menu */
+.menu-article-closed {
+  transform: translateX(-100%); /* Hide the menu */
+}
+
+
 /* ========= Curtain effect for the Hero section ========== */
 
 @keyframes slideCurtain {

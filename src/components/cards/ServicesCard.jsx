@@ -1,7 +1,8 @@
 import { Add } from '@mui/icons-material';
 import React from 'react'
 
-const ServicesCard = ({iconSrc, title, description, onClick}) => {
+const ServicesCard = ({ iconSrc, title, description, onClick }) => {
+    
     return (
         <article className='flex '>
             <div className=" flex items-center hover:bg-spaceCadet w-[32rem] h-[16rem]

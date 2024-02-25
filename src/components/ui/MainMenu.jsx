@@ -3,7 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const MainMenu = () => {
     return (
-        <ul className="ul">
+        <ul className='ul'>
               
             <li className='nav-link text-spanishBlue font-medium'>
                 <ScrollLink to='about' smooth={true} duration={500}>
@@ -37,7 +37,7 @@ const MainMenu = () => {
 
             <li className='nav-link text-spanishBlue font-medium'>
                 <ScrollLink to='contact' smooth={true} duration={500}>
-                    Contact us
+                    Contact Us
                 </ScrollLink>
             </li>
         </ul>      

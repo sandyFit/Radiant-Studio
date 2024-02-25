@@ -1,5 +1,6 @@
 import { Close } from '@mui/icons-material'
-import React from 'react'
+import React from 'react';
+import { renderDescription } from '../../utils/functions';
 
 const ModalServices = ({ service, isOpen, onClose }) => {
 
@@ -17,19 +18,10 @@ const ModalServices = ({ service, isOpen, onClose }) => {
     if (!isOpen) return null;
 
 
-    // Adding line breaks to paragraphs
-    const renderDescription = (text) => {
-        return text.split('\n').map((line, index) => (
-            <React.Fragment key={index}>
-            {line}<br />
-            </React.Fragment>
-            ));
-        };
-
-   
+    
     return (
         <div className="z-50 overflow-auto bg-azure flex items-center justify-center 
-            px-6 lg:px-24 py-24 relative w-[100vw] h-screen">
+            px-6 lg:px-24 py-4 relative w-[100vw] h-screen">
             
             <button
                 className=" text-white absolute top-8 right-16"
