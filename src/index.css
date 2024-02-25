@@ -16,41 +16,21 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Custom carousel adjustments */
+/* Horizontal scroll  */
 
-.custom-carousel-item {
-  flex: 1 0 auto; /* This makes sure that the item can grow and shrink but not beyond its content */
-  width: calc(33.333% - 20px); /* Adjust the 20px if you need more or less space between items */
-  margin: 0 10px; /* This creates some space between items, adjust as needed */
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-
-.carousel .slide {
-  margin: 0 50px; /* Adjust based on your needs */
+.motion-text {
+  display: inline-flex; /* Ensures the text acts as one continuous line */
+  animation: scrollText 30s linear infinite; /* Starts with a 30s duration */
 }
-
-.carousel.carousel-slider .control-arrow {
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-
-.custom-carousel-container {
-  max-width: 90%;
-  margin: auto;
-}
-
-/* Adjust arrow positions */
-.carousel .control-prev.control-arrow {
-  left: 0;
-  transform: translateX(-100%) translateY(-50%);
-}
-
-.carousel .control-next.control-arrow {
-  right: 0;
-  transform: translateX(100%) translateY(-50%);
-}
-
 
 
 

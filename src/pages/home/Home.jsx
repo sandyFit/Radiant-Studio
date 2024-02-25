@@ -4,6 +4,7 @@ import About from './About';
 import Services from './Services';
 import Team from './Team';
 import Reviews from './Reviews';
+import Faqs from './Faqs';
 
 const Home = () => {
     return (
@@ -22,6 +23,9 @@ const Home = () => {
             </section>
             <section id="reviews">
                 <Reviews/>
+            </section>
+            <section id="faq">
+                <Faqs/>
             </section>
         </div>
     )

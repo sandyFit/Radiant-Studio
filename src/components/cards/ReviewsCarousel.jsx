@@ -33,17 +33,17 @@ const ReviewsCarousel = ({ reviews, autoSlide, autoSlideInterval }) => {
 
 
     const goNext = () => {
-    setActiveIndex((prevIndex) => {
-        // Instead of returning undefined when reaching the end, loop back to 0
-        let nextIndex = prevIndex + 1;
-        if (nextIndex + visibleCards - 1 >= reviews.length) { // Adjusted condition to account for visibleCards
-            return 0; // Loop back to the start
-        }
-        else {
-            return nextIndex;
-        }
-    });
-}
+        setActiveIndex((prevIndex) => {
+            // Instead of returning undefined when reaching the end, loop back to 0
+            let nextIndex = prevIndex + 1;
+            if (nextIndex + visibleCards - 1 >= reviews.length) { // Adjusted condition to account for visibleCards
+                return 0; // Loop back to the start
+            }
+            else {
+                return nextIndex;
+            }
+        });
+    }
 
 
     const goPrev = () => {
@@ -57,13 +57,13 @@ const ReviewsCarousel = ({ reviews, autoSlide, autoSlideInterval }) => {
         })
     }
 
-     useEffect(() => {
-        if (!autoSlide) return;
-        const slideInterval = setInterval(() => {
-            goNext();
-        }, autoSlideInterval);
-        return () => clearInterval(slideInterval);
-    }, [autoSlide, autoSlideInterval, goNext]);
+    //  useEffect(() => {
+    //     if (!autoSlide) return;
+    //     const slideInterval = setInterval(() => {
+    //         goNext();
+    //     }, autoSlideInterval);
+    //     return () => clearInterval(slideInterval);
+    // }, [autoSlide, autoSlideInterval, goNext]);
 
 
     const renderCards = () => {

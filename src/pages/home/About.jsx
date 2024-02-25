@@ -41,11 +41,12 @@ const About = () => {
     };
   }, []);
     return (
-        <Element className='flex flex-col py-[3rem] bg-custom-gradient-bg-inverse-left'>
-            <MotionText part1={'Welcome to'}
-                part2={'Radiant Dental'}
-                part3={'Studio'}
-            />
+        <Element className='flex flex-col py-[3rem] bg-custom-gradient-bg-inverse-left' >
+                <MotionText part1={'Welcome to'}
+                    part2={'Radiant Dental'}
+                    part3={'Studio'}
+                />
+
             <div className="relative py-[6rem] flex justify-center items-center">
                 
                 <img src="/images/dots.png" alt="dots" className='absolute w-72 left-24 bottom-2 opacity-25' />
