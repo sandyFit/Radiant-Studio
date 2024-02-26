@@ -4,7 +4,7 @@ import ReviewsCarousel from '../../components/cards/ReviewsCarousel';
 
 const Reviews = () => {
     return (
-        <section className='bg-custom-gradient-bg-left flex flex-col justify-center py-12'>
+        <section className='bg-custom-gradient-bg-left flex flex-col justify-center pt-36'>
             <div className="flex flex-col items-center gap-8 relative">
                 <h2 className='text-center text-white3 text-3xl md:text-6xl font-bold w-2/3 
                     lg:w-2/4 xl:w-2/4 2xl:w-4/5 pt-20 lg:pt-4' >

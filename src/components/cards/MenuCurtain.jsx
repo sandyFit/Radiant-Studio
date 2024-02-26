@@ -5,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const MenuCurtain = ({isMenuOpen}) => {
     return (
         <article className='flex flex-col justify-center
-            rounded-3xl bg-custom-gradient-bg-cards p-36 menu-article'
+            rounded-3xl bg-custom-gradient-bg-cards p-36 menu-article z-30'
             style={{
                 transform: isMenuOpen ? 'translateX(0)' : 'translateX(-100%)'
             }}

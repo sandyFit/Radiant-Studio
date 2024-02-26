@@ -3,6 +3,7 @@ import NavBar from './layouts/NavBar'
 import { Outlet } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the CSS styles
+import Footer from './layouts/Footer';
 
 const App = () => {
 
@@ -15,7 +16,8 @@ const App = () => {
     return (
         <div className="h-full">
             <NavBar />      
-            <Outlet/>
+            <Outlet />
+            <Footer/>
         </div>
     )
 }

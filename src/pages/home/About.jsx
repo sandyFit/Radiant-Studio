@@ -13,7 +13,7 @@ const About = () => {
         const scrollPosition = window.scrollY;
 
         // Adjust the scroll threshold based on your layout
-        const scrollThreshold = 1200;
+        const scrollThreshold = 1140;
 
         if (scrollPosition > scrollThreshold) {
         setShowFloatingBtn(true);
@@ -61,14 +61,14 @@ const About = () => {
                     <button onClick={toggleMenu}
                         className={`fixed p-5 top-8 right-[110rem] group inline-flex items-center 
                             justify-center overflow-hidden rounded-full bg-white3 bg-opacity-30 
-                            z-10 ${showFloatingBtn ? '' : 'invisible'} `}>
+                            z-50 ${showFloatingBtn ? '' : 'invisible'} `}>
                         <div className={`transition duration-300 text-spaceCadet ${isMenuOpen ? 'rotate-icon' : ''}`}>
                             {isMenuOpen ? <Close style={{fontSize: '3rem'}} /> : <Menu style={{fontSize: '3rem'}} />}
                         </div>
                     </button>
 
                 
-                    <div className={`${showFloatingBtn ? '' : 'invisible'}`}>                       
+                    <div className={`z-30 ${showFloatingBtn ? '' : 'invisible'}`}>                       
                         {isMenuOpen && (
                             <MenuCurtain isMenuOpen={isMenuOpen}
                                 
@@ -79,7 +79,7 @@ const About = () => {
                         
 
                     <button onClick={scrollToTop}
-                        className={`fixed p-5 left-[110rem] top-[50rem] group inline-flex  items-center 
+                        className={`fixed p-5 left-[110rem] top-[48rem] group inline-flex  items-center 
                             justify-center overflow-hidden rounded-full bg-white3 bg-opacity-30 z-50
                             ${showFloatingBtn ? '' : 'invisible'}`}>
                         <div className="transition duration-300 group-hover:rotate-[360deg] text-spaceCadet">
