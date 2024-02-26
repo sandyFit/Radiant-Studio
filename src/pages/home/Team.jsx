@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import UnderlineText from '../../components/ui/UnderlineText';
-import staffData from '../../data/staffData.json';
+import staffData from '../../data/staffData';
 import StaffCard from '../../components/cards/StaffCard';
-import bioData from '../../data/bioData.json';
+import bioData from '../../data/bioData';
 import TeambioCard from '../../components/cards/TeambioCard';
 
 const Team = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import servicesCardData from '../../data/servicesCardData.json';
+import servicesCardData from '../../data/servicesCardData';
 import services from '../../data/services'
 import ServicesCard from '../../components/cards/ServicesCard';
 import ModalServices from '../../components/cards/ModalServices';

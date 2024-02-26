@@ -14,14 +14,15 @@ const QuestionCard = ({ question, answer, isOpen, onToggle }) => {
                     {question}
                 </h4>
 
-                <button className={`item text-azure ${ isOpen ? 'activeIcon' : 'inactiveIcon' }`}>
+                <button className={`item bg-custom-gradient-btn rounded-full p-2 text-white3 
+                    ${isOpen ? 'activeIcon rotate-icon' : 'inactiveIcon'}`}>
                     {isOpen ? <Remove style={{ fontSize: '2rem' }} /> : <Add style={{ fontSize: '2rem' }} />}                   
                 </button>
             </div>
 
             { isOpen && (
                 <div className=" text-xl content">
-                    <p className='px-12 pb-12 text-spanishBlue'>
+                    <p className='px-12 pb-12 text-white3'>
                         {renderDescription(answer)}
                     </p>
                 </div>
