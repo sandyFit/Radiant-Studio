@@ -32,11 +32,10 @@ const Hero = () => {
                 </p>
  
                 <div className="flex gap-10">
-                    {/* <button className='btn-filled px-12 w-72 hover:bg-azure!important' onClick={handleClick}>
-                        <span className='relative'>Book online</span>
-                    </button> */}
 
-                    <button class="group relative overflow-hidden overflow-x-hidden btn-filled px-12 w-72">
+                    <button class="group relative overflow-hidden overflow-x-hidden btn-filled px-12 w-72"
+                        onClick={handleClick}
+                    >
                         <span class="relative z-10">Book online</span>
                         <span class="absolute inset-0 overflow-hidden rounded-md">
                             <span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full 
