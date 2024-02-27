@@ -10,19 +10,14 @@ const NewsletterInput = () => {
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
         if (!email) {
-            showAlert({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Fields should NOT be empty.',
-            });
-        } else if (!emailRegex.test(email)) { // Notice the `!` to correctly apply the logic
-            showAlert({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Email should follow the standard format: john@doe.com',               
-            }, setEmail(''));
-        } else {
-            showAlert('Success!', 'Your email was submitted successfully.', 'success');
+            showAlert('Fields should NOT be empty.', 'error',);
+        }
+        else if (!emailRegex.test(email)) { // Notice the `!` to correctly apply the logic
+            showAlert('Email should follow the standard format: john@doe.com', 'error');
+            setEmail('')
+        }
+        else {
+            showAlert('Your email was submitted successfully.', 'success');
             setEmail('');
         }
     };
@@ -50,7 +45,7 @@ const NewsletterInput = () => {
                     </button>
                 </div>
             </form>
-            <p className='text-spanishBlue font-medium text-medium mt-3'>
+            <p className='text-spanishBlue font-medium text-medium'>
                 Occasionally we send newsletters containing practice news. If you'd like to receive this
                 information, sign up to our email above. We take your privacy seriously and ensure that your
                 information will not be passed on to anyone.
