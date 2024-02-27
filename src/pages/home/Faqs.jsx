@@ -13,8 +13,8 @@ const Faqs = () => {
     }
 
     return (
-        <section className='relative z-1 flex flex-col justify-center items-center bg-custom-gradient-bg-inverse-left
-            h-[85rem]'>
+        <section className='relative flex flex-col justify-center items-center bg-custom-gradient-bg-inverse-left
+            h-auto pt-40 pb-64'>
             
             <UnderlineText
                 part1={'Got'}

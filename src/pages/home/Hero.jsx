@@ -32,12 +32,19 @@ const Hero = () => {
                 </p>
  
                 <div className="flex gap-10">
-                    <button className='btn-filled group relative overflow-hidden transition px-12 w-72 hover:bg-azure' onClick={handleClick}>
+                    {/* <button className='btn-filled px-12 w-72 hover:bg-azure!important' onClick={handleClick}>
                         <span className='relative'>Book online</span>
-                        <div className="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[16px]">
-                            <div className="relative h-full w-8 bg-white/40"></div>
-                        </div>
+                    </button> */}
+
+                    <button class="group relative overflow-hidden overflow-x-hidden btn-filled px-12 w-72">
+                        <span class="relative z-10">Book online</span>
+                        <span class="absolute inset-0 overflow-hidden rounded-md">
+                            <span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full 
+                            bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150">
+                            </span>
+                        </span>
                     </button>
+
 
                     <div className="flex items-center gap-2">
                         <div className="flex">

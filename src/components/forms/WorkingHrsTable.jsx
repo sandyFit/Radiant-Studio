@@ -33,8 +33,16 @@ const WorkingHrsTable = () => {
         </tbody>
       </table>
 
-      <button className='btn-filled px-16 py-3 mt-4'>
+      {/* <button className='btn-filled px-16 py-3 mt-4'>
         book online
+      </button> */}
+
+      <button class="group relative overflow-hidden overflow-x-hidden btn-filled px-16 py-3 mt-4">
+        <span class="relative z-10">book online</span>
+        <span class="absolute inset-0 overflow-hidden rounded-md">
+          <span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-blue-500
+            transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+        </span>
       </button>
     </article>
   );

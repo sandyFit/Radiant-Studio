@@ -31,7 +31,7 @@ const ReviewsCard = ({name, srcImg, review}) => {
             </div>
 
 
-            <p className='text-spanishBlue text-xl pt-6'>
+            <p className='text-spanishBlue text-xl font-light pt-6'>
                 {renderDescription(review)}
             </p>       
         </article>

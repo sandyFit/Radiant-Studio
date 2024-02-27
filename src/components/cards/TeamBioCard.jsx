@@ -14,7 +14,7 @@ const TeambioCard = ({ firstName, lastName, bio }) => {
 
             <hr className='border-2 border-spanishBlue w-36 my-3 ml-36' />
 
-            <p className='text-white3 text-md md:text-lg xl-text-xl font-regular xl:font-medium'>
+            <p className='text-white3 text-md md:text-lg xl:text-[1.2rem] font-light mt-6'>
                 {renderDescription(bio)}
             </p>
         </article>

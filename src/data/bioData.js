@@ -24,7 +24,7 @@ const bioData = [
         id: 4,
         firstName: "Gabrielle",
         lastName: "Dawson",
-        bio: "Gabrielle and Dr. Roberts have worked together since 1996.  Gabrielle is exceptionally qualified, she began her dental career over 30 years ago as a registered dental assistant. \n\nHer current role is that of front office manager. She enjoys helping and interacting with patients. Our patients and staff enjoy her bubbly, positive personality and radiant smile. \n\nGabrielle loves to travel, dine out and spend time outdoors. She values quality time with her husband Steve, their children and grandchildren."
+        bio: "Gabrielle and Dr. Roberts have worked together since 1999.  Gabrielle is exceptionally qualified, she began her dental career over 30 years ago as a registered dental assistant. \n\nHer current role is that of front office manager. She enjoys helping and interacting with patients. Our patients and staff enjoy her bubbly, positive personality and radiant smile. \n\nGabrielle loves to travel, dine out and spend time outdoors. She values quality time with her husband Steve, their children and grandchildren."
     },
 
     {

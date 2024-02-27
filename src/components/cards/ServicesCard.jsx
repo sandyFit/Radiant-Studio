@@ -30,7 +30,7 @@ const ServicesCard = ({ iconSrc, title, description, onClick }) => {
 
                     <hr className='border-2 border-blue-400 w-36 my-3' />
                     
-                    <p className='text-sans text-white text-[1.08rem] font-medium '>
+                    <p className='text-sans text-white text-[1.2rem] font-thin'>
                         {description}
                     </p>
                 </div>

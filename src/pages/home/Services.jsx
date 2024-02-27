@@ -39,7 +39,7 @@ const Services = () => {
                     </span>         
                 </h2>
 
-                <p className='text-oceanBlue text-lg md:text-xl xl:text-2xl font-medium w-3/4 md:w-2/4 2xl:w-[64%]'
+                <p className='text-oceanBlue text-lg md:text-xl xl:text-2xl font-light w-3/4 md:w-2/4 2xl:w-[64%]'
                     data-aos="fade-up">
                     We provide a wide range of treatments, including cosmetic dentistry. Our commitment is rooted in
                     assisting patients in preserving lifelong healthy teeth. Trust us for diverse services aimed at

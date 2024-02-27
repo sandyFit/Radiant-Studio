@@ -16,7 +16,7 @@ const Team = () => {
     }
 
     return (
-        <section className='flex flex-col py-[3rem] bg-custom-gradient-bg-inverse-right pt-24 '>
+        <section className='flex flex-col bg-custom-gradient-bg-inverse-right pt-36 '>
             <UnderlineText part1={'Nice to'}
                 part2={'Meet You!'}
 
@@ -36,7 +36,7 @@ const Team = () => {
                 </article>
 
                 <article>
-                    <div className='pt-8'>
+                    <div className='pt-4'>
                         {/* Render TeamBigCard and manage visibility through state */}
                         {/* Conditionally render TeamBigCard for mobile based on openMobileModal */}
                         {/* For desktop, it's always rendered but uses CSS for responsiveness */}

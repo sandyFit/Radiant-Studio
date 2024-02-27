@@ -96,7 +96,7 @@ const About = () => {
                         
                     </h2>
 
-                    <p className='text-lg md:text-xl xl:text-2xl text-white3 font-medium mt-8 w-3/4 
+                    <p className='text-lg md:text-xl xl:text-2xl text-white3 font-light mt-8 w-3/4 
                         lg:w-2/4 xl:w-2/4 2xl:w-3/5'>
                         At Radiant Dental Studio, your well-being is our top priority. We cultivate robust dentist-patient
                         relationships by prioritizing your needs.

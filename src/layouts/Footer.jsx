@@ -44,8 +44,8 @@ const Footer = () => {
                 </div>
 
                 
-                <div className='absolute inset-0 top-[35rem] w-full h-16 bg-[#111f3b] flex items-center justify-end 
-                    text-center gap-[22rem]'>
+                <div className='absolute inset-0 top-[35rem] w-full h-16 bg-[#111f3b] flex items-center justify-end
+                    text-center pr-[7.6rem] gap-[200px]'>
                     <p className="text-lg font-light text-blue-400 ">
                         © 2024 Design & Development by Trish Ramos. 
                     </p>

@@ -125,6 +125,12 @@ Base positioning */
     animation: slideLeft 10s linear infinite;
 }
 
+/*  Hover for gradient buttons*/
+.btn-filled:hover {
+  background-color: #0084FF !important; /* Azure color */
+  background-image: none !important;
+}
+
 
 @layer base {
     body {
@@ -161,9 +167,10 @@ Base positioning */
 
     
     .btn-filled {
-        @apply button text-white bg-custom-gradient-btn hover:bg-transparent  border-spanishBlue 
+        @apply button text-white bg-custom-gradient-btn hover:bg-spanishBlue hover:text-zinc-100 border-spanishBlue 
              shadow-xl shadow-midnight
     }
+
     .btn-filled-no-shadow {
         @apply text-white bg-custom-gradient-btn hover:bg-transparent  border-spanishBlue 
              
