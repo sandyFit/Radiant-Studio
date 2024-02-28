@@ -33,12 +33,12 @@ const Hero = () => {
  
                 <div className="flex gap-10">
 
-                    <button class="group relative overflow-hidden overflow-x-hidden btn-filled px-12 w-72"
+                    <button className="group relative overflow-hidden overflow-x-hidden btn-filled px-12 w-72"
                         onClick={handleClick}
                     >
-                        <span class="relative z-10">Book online</span>
-                        <span class="absolute inset-0 overflow-hidden rounded-md">
-                            <span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full 
+                        <span className="relative z-10">Book online</span>
+                        <span className="absolute inset-0 overflow-hidden rounded-md">
+                            <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full 
                             bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150">
                             </span>
                         </span>

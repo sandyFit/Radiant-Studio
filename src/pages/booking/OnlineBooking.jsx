@@ -24,13 +24,13 @@ const OnlineBooking = () => {
                         </h2>
                         <div className="space-y-4 mt-4">
                             <button className="booking-btn" onClick={() => navigate('/new-patient-appointment')}>
-                                New Patient
+                                <span className='app-title'>New Patient</span>
                             </button>
                             <button className="booking-btn" onClick={() => navigate('/existing-patient-appointment')}>
-                                Existing Patient
+                                <span className='app-title'>Existing Patient</span>
                             </button>
                             <button className="booking-btn" onClick={() => navigate('/emergency')}>
-                                Emergency/Toothache
+                                <span className='app-title'>Emergency/Toothache</span>
                             </button>
                         </div>
                     </div>

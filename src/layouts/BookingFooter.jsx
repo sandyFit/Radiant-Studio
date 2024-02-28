@@ -7,9 +7,9 @@ const BookingFooter = () => {
     return (
         <article className='w-full flex flex-col items-center'>          
 
-            <div className="bg-spanishBlue w-full h-3 mt-6"></div>
+            <div className="bg-custom-gradient-btn w-full h-3 mt-6"></div>
 
-            <div className="bg-spaceCadet flex flex-col items-end w-full h-auto p-6">
+            <div className="bg-[#2d3e5e] flex flex-col items-end w-full h-auto p-6">
 
                 <div className='flex justify-end w-1/2 text-slate-200 my-6 mr-16 gap-12'>
                 <InstagramIcon 
