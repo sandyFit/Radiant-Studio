@@ -14,7 +14,7 @@ const Footer = () => {
 
             {/* Desktop */}
 
-            <article className='relative z-1 hidden lg:flex flex-col justify-between'>
+            <article className='relative z-1 hidden 2xl:flex flex-col justify-between'>
 
                 <div className='flex justify-evenly space-x-6 text-spaceCadet pl-32'>
                     <div id="contact">
@@ -45,7 +45,7 @@ const Footer = () => {
 
                 
                 <div className='absolute inset-0 top-[35rem] w-full h-16 bg-[#111f3b] flex items-center justify-end
-                    text-center pr-[7.6rem] gap-[200px]'>
+                    text-center pr-[3rem] 2xl:pr-[7.8em] gap-[5rem] 2xl:gap-[12.5em]'>
                     <p className="text-lg font-light text-blue-400 ">
                         © 2024 Design & Development by Trish Ramos. 
                     </p>
@@ -66,7 +66,7 @@ const Footer = () => {
             </article>
 
             {/* Mobile */}
-            <article className="lg:hidden flex flex-col justify-center items-center">
+            <article className="2xl:hidden flex flex-col justify-center items-center">
                 <MobileFooter/>
             </article>
       

@@ -5,11 +5,11 @@ const ServicesCard = ({ iconSrc, title, description, onClick }) => {
     
     return (
         <article className='flex '>
-            <div className=" flex items-center hover:bg-spaceCadet w-[32rem] h-[16rem]
+            <div className=" flex items-center hover:bg-spaceCadet w-[28rem] lg:w-[32rem] h-[16rem]
                 py-10 px-12 rounded-2xl gradient-border relative ">
 
                 
-                <button className="absolute bg-custom-gradient-btn left-[29rem] -bottom-[2.2rem] shadow-xl 
+                <button className="absolute bg-custom-gradient-btn left-[25em] lg:left-[29em] -bottom-[2.2rem] shadow-xl 
                     shadow-slate-800 p-6 rounded-full text-white3"
                     onClick={onClick}
                 >
