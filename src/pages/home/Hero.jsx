@@ -11,13 +11,24 @@ const Hero = () => {
     }
 
     return (
-        <section className='bg-custom-gradient-bg-left grid lg:grid-cols-2 2xl:grid-cols-2 relative items-center 
-            justify-center px-8'
+        <section className='bg-custom-gradient-bg-left grid grid-cols-1 lg:grid-cols-2 relative'
             style={{ minHeight: `calc(100vh - 170px)` }}>
             
-            <article className='grid content-start space-y-12 w-full place-self-center ml-[20rem] lg:px-0 pb-[5rem]'>
-                <h1 className='text-[2.7rem] md:text-7xl lg:text-[5.2rem] text-white font-bold w-full max-w-12 
-                leading-[3rem]'>
+            <div className='lg:hidden grid place-self-center w-8/12 p-4 mb-10 md:mb-16 bg-white shadow-lg shadow-slate-900 
+                transform rotate-2 mt-2 md:mt-4'>
+                <div className="image-container">
+                    
+                    <div className={`curtain bg-slate-600 opacity-95`}>
+                        
+                    </div>
+                    <img src='/people/black-girl.jpg' alt='beautiful-black-girl-smiling' className="w-full"/>
+                </div>
+                <div className="p-4"></div>
+            </div>
+            
+            <article className='grid space-y-8 md:space-y-12 w-full place-self-center ml-[11rem] md:ml-[16rem] lg:ml-[17.75vw] pb-[5rem]'>
+                <h1 className='text-[2.7rem] md:text-[3.5rem] lg:text-[4.2rem] 2xl:text-[5.2rem] text-white 
+                font-bold w-9/12 leading-[1em]'>
                 <span >
                     Reveal
                     <span className='app-title' style={{ margin: ' 0 1rem' }}>
@@ -26,14 +37,14 @@ const Hero = () => {
                 </span>
                     Smile
                 </h1>
-                <p className='text-spanishBlue text-lg md:text-xl lg:text-2xl font-medium w-[45rem]'>
+                <p className='text-spanishBlue text-lg md:text-xl lg:text-2xl font-medium w-9/12'>
                     Let us take care of your teeth. Our dedicated team of professionals is committed to providing you
                     with first-class dental care.
                 </p>
  
-                <div className="flex gap-10">
+                <div className="flex flex-col md:flex-row gap-10">
 
-                    <button className="group relative overflow-hidden overflow-x-hidden btn-filled px-12 w-72"
+                    <button className="group relative overflow-hidden overflow-x-hidden btn-filled px-12 py-4 w-72"
                         onClick={handleClick}
                     >
                         <span className="relative z-10">Book online</span>
@@ -66,7 +77,7 @@ const Hero = () => {
                 </div>
             </article>
 
-            <article className='w-[90%] place-self-center pr-12'>
+            <article className='hidden lg:grid w-[90%] place-self-center pr-24'>
                 <ImagesGrid/>
             </article>
         </section>

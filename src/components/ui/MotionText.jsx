@@ -1,6 +1,6 @@
 const MotionText = ({part1, part2, part3}) => {
     return (
-        <div className="text-slider-container font-anybody z-10" style={{overflow: 'hidden'}}>
+        <div className="text-slider-container font-anybody text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] z-10" style={{overflow: 'hidden'}}>
             <h2 className='text-center text-white3 motion-text font-regular tracking-wider'>
                 <div style={{display: 'flex', whiteSpace: 'nowrap'}}>
                     <span className='text-white3' style={{margin: '0 1rem'}}>

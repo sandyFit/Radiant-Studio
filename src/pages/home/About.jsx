@@ -47,13 +47,14 @@ const About = () => {
                     part3={'Studio'}
                 />
 
-            <div className="relative py-[6rem] flex justify-center items-center">
+            <div className="relative py-[6rem] flex flex-col lg:flex-row justify-center items-center gap-16 md:gap-24">
                 
-                <img src="/images/dots.png" alt="dots" className='absolute w-72 left-24 bottom-2 opacity-25' />
-                <img src="/images/dots.png" alt="dots" className='absolute w-72 left-[40rem] -top-6 rotate-90 opacity-25' />
+                <img src="/images/dots.png" alt="dots" className='hidden xl:block absolute w-72 left-24 bottom-2 opacity-25' />
+                <img src="/images/dots.png" alt="dots" className='hidden xl:block absolute w-72 left-[40rem] -top-6 rotate-90 opacity-25' />
 
-                <article className='w-1/2 bg-white shadow-xl shadow-slate-900 transform -rotate-3 px-8 pt-6 pb-24 ml-[16rem]'>                   
-                    <img src="/images/dental-studio.jpg" alt="Dental Studio" className='' />
+                <article className='w-9/12 xl:w-1/2 bg-white shadow-xl shadow-slate-900 transform -rotate-3 px-8 pt-6 
+                    pb-24 ml-[1rem] xl:ml-[16rem]'>                   
+                    <img src="/images/dental-studio.jpg" alt="Dental Studio"/>
                 </article>
 
                 <article className='flex flex-col justify-center items-center relative'>

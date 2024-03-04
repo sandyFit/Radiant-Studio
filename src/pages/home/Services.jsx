@@ -29,10 +29,10 @@ const Services = () => {
 
 
     return (
-        <section className='flex justify-center bg-custom-gradient-bg-right py-12'>
+        <section className='flex justify-center bg-custom-gradient-bg-right py-2 xl:py-12'>
             <div className="flex flex-col items-center gap-8 relative">
                 <h2 className='text-center text-white3 text-3xl md:text-6xl font-bold w-2/3 
-                    lg:w-2/4 xl:w-2/4 2xl:w-4/5 pt-20 lg:pt-4' data-aos="fade-up">
+                    lg:w-2/4 xl:w-2/4 2xl:w-4/5 pt-2 lg:pt-4' data-aos="fade-up">
                     Discover Our Exceptional  
                     <span className='app-title' style={{ margin: ' 0 1rem' }}>
                         Dental Services
@@ -46,7 +46,7 @@ const Services = () => {
                     enhancing both the aesthetics and longevity of your smile.
                 </p>
                   
-                <article className="flex flex-wrap gap-20 w-3/5 mt-4" data-aos='zoom-in-up'>
+                <article className="flex flex-wrap gap-20 w-full xl:w-1/2 mt-4" data-aos='zoom-in-up'>
                     {servicesCardData.map((service, index) => (
                         <div key={index} className=''>                    
                             <ServicesCard

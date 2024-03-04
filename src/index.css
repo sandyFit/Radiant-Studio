@@ -121,7 +121,6 @@ Base positioning */
 .motion-text {
     display: inline-block;
     white-space: nowrap;
-    font-size: 6.5rem;
     animation: slideLeft 10s linear infinite;
 }
 
@@ -203,7 +202,7 @@ Base positioning */
     }
 
     .nav-link {
-        @apply p-4 relative tracking-[1px] hover:text-white3
+        @apply relative tracking-[1px] hover:text-white3
     }
 
     .nav-link::after {
