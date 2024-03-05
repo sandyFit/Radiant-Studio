@@ -26,9 +26,9 @@ const Hero = () => {
                 <div className="p-4"></div>
             </div>
             
-            <article className='grid space-y-8 md:space-y-12 w-full place-self-center ml-[11rem] md:ml-[16rem] lg:ml-[17.75vw] pb-[5rem]'>
-                <h1 className='text-[2.7rem] md:text-[3.5rem] lg:text-[4.2rem] 2xl:text-[5.2rem] text-white 
-                font-bold w-9/12 leading-[1em]'>
+            <article className='grid space-y-8 md:space-y-12 w-full place-self-center ml-[8rem] md:ml-[16rem] lg:ml-[17.75vw] pb-[5rem]'>
+                <h1 className='text-white text-4xl md:text-6xl xl:text-7xl font-bold
+                        w-2/3 lg:w-3/4 2xl:w-3/5 leading-[1em]'>
                 <span >
                     Reveal
                     <span className='app-title' style={{ margin: ' 0 1rem' }}>
@@ -37,14 +37,15 @@ const Hero = () => {
                 </span>
                     Smile
                 </h1>
-                <p className='text-spanishBlue text-lg md:text-xl lg:text-2xl font-medium w-9/12'>
+                <p className='text-lg md:text-xl 2xl:text-2xl text-white3 font-light mt-8 w-3/4 
+                        2xl:w-3/5'>
                     Let us take care of your teeth. Our dedicated team of professionals is committed to providing you
                     with first-class dental care.
                 </p>
  
                 <div className="flex flex-col md:flex-row gap-10">
 
-                    <button className="group relative overflow-hidden overflow-x-hidden btn-filled px-12 py-4 w-72"
+                    <button className="group relative overflow-hidden overflow-x-hidden btn-filled px-12 py-4 w-[70%] md:w-72"
                         onClick={handleClick}
                     >
                         <span className="relative z-10">Book online</span>

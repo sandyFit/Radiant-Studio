@@ -9,6 +9,7 @@ import NewPatientAppointment from './pages/booking/NewPatientAppointment.jsx';
 import ExistingPatientAppointment from './pages/booking/ExistingPatientAppointment.jsx';
 import BookAppointment from './pages/booking/BookAppointment.jsx';
 import EmergencyAppointment from './pages/booking/EmergencyAppointment.jsx';
+import NotFoundPage from './pages/404/NotFoundPage.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -24,6 +25,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<Route path='/existing-patient-appointment' element={<ExistingPatientAppointment/>} />
 				<Route path='/emergency-appointment' element={<EmergencyAppointment/>} />
                 <Route path='/book-appointment' element={<BookAppointment />} />
+
+                <Route path="*" element={<NotFoundPage />} />
                 
             </Routes>
         </Router>

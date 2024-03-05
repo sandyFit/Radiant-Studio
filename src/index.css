@@ -133,7 +133,7 @@ Base positioning */
 
 @layer base {
     body {
-        @apply font-sans box-border;
+        @apply w-full font-sans box-border overflow-x-hidden;
     }
 
 
@@ -206,11 +206,11 @@ Base positioning */
     }
 
     .nav-link::after {
-        @apply content-[''] bg-spanishBlue h-[5px] w-[0%] left-0 bottom-[5px] rounded-xl absolute duration-500
+        @apply content-[''] bg-spanishBlue h-[5px] w-[0%] left-0 top-8 rounded-xl absolute duration-500
     }
 
     .nav-link:hover::after {
-        @apply w-[100%]
+        @apply w-[100%] 
     }
 
     .item .activeIcon {
