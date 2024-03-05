@@ -14,7 +14,7 @@ const Faqs = () => {
 
     return (
         <section className='relative flex flex-col justify-center items-center bg-custom-gradient-bg-inverse-left
-            h-auto pt-40 pb-64'>
+            h-auto pt-40 '>
             
             <UnderlineText
                 part1={'Got'}
@@ -22,8 +22,8 @@ const Faqs = () => {
 
             />
             <div>
-                <h2 className='text-center text-white3 text-3xl md:text-6xl font-bold w-2/3 
-                    lg:w-2/4 xl:w-2/4 2xl:w-full pb-6 pt-20 lg:pt-4'>
+                <h2 className='text-center text-white3 text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold
+                     pt-6 pb-10' >
                         We Have
                     <span className='app-title' style={{ margin: ' 0 1rem' }}>
                         Answers
@@ -31,7 +31,7 @@ const Faqs = () => {
                 </h2>     
             </div> 
 
-            <div className="flex flex-col justify-center items-center space-y-6">
+            <div className="flex flex-col justify-center items-center space-y-6 pb-64">
                 {questions.map((question, index) => (
                 <QuestionCard
                     key={index}
@@ -42,6 +42,8 @@ const Faqs = () => {
                 />
                 ))}
             </div>
+
+            <hr className='w-full h-1 bg-custom-gradient-btn border-none'/>
         </section>
     )
 }

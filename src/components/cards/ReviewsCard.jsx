@@ -4,7 +4,7 @@ import { renderDescription } from '../../utils/functions';
 
 const ReviewsCard = ({name, srcImg, review}) => {
     return (
-        <article className='w-[30rem] gradient-border rounded-3xl p-12 mt-12 relative'>           
+        <article className='w-[70%] lg:w-[33%] 2xl:w-[25%] gradient-border rounded-3xl p-12 mt-12 relative'>           
             <div className="flex justify-start items-center space-x-4">
                 <div >
                     <img src={srcImg}

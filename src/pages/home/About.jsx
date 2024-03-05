@@ -47,13 +47,13 @@ const About = () => {
                     part3={'Studio'}
                 />
 
-            <div className="relative py-[6rem] flex flex-col lg:flex-row justify-center items-center gap-16 md:gap-24">
+            <div className="relative py-[6rem] flex flex-col xl:flex-row justify-center items-center gap-16 md:gap-24">
                 
-                <img src="/images/dots.png" alt="dots" className='hidden xl:block absolute w-72 left-24 bottom-2 opacity-25' />
-                <img src="/images/dots.png" alt="dots" className='hidden xl:block absolute w-72 left-[40rem] -top-6 rotate-90 opacity-25' />
+                <img src="/images/dots.png" alt="dots" className='hidden 2xl:block absolute w-72 left-24 bottom-2 opacity-25' />
+                <img src="/images/dots.png" alt="dots" className='hidden 2xl:block absolute w-72 left-[40rem] -top-6 rotate-90 opacity-25' />
 
-                <article className='w-9/12 xl:w-1/2 bg-white shadow-xl shadow-slate-900 transform -rotate-3 px-8 pt-6 
-                    pb-24 ml-[1rem] xl:ml-[16rem]'>                   
+                <article className='w-9/12 lg:w-8/12 2xl:w-1/2 bg-white shadow-xl shadow-slate-900 transform -rotate-3 px-8 pt-6 
+                    pb-24 ml-[1rem] lg:ml-36 2xl:ml-[16rem]'>                   
                     <img src="/images/dental-studio.jpg" alt="Dental Studio"/>
                 </article>
 
@@ -80,7 +80,7 @@ const About = () => {
                         
 
                     <button onClick={scrollToTop}
-                        className={`fixed p-5 left-[110rem] top-[48rem] group inline-flex  items-center 
+                        className={`fixed p-5 left-96 2xl:left-[110rem] 2xl:top-[48rem] group inline-flex  items-center 
                             justify-center overflow-hidden rounded-full bg-white3 bg-opacity-30 z-50
                             ${showFloatingBtn ? '' : 'invisible'}`}>
                         <div className="transition duration-300 group-hover:rotate-[360deg] text-spaceCadet">
@@ -88,8 +88,8 @@ const About = () => {
                         </div>
                     </button>
 
-                    <h2 className='text-center text-white3 text-3xl md:text-5xl xl:text-6xl font-bold
-                        w-2/3 lg:w-2/4 xl:w-2/4 2xl:w-3/5'>
+                    <h2 className='text-center text-white3 text-3xl md:text-4xl xl:text-5xl font-bold
+                        w-2/3 lg:w-3/4 2xl:w-3/5'>
                         Service and Safety is Our
                         <span className='app-title ' style={{ margin: ' 0 1rem' }}>
                             Priority
@@ -97,8 +97,8 @@ const About = () => {
                         
                     </h2>
 
-                    <p className='text-lg md:text-xl xl:text-2xl text-white3 font-light mt-8 w-3/4 
-                        lg:w-2/4 xl:w-2/4 2xl:w-3/5'>
+                    <p className='text-lg md:text-xl 2xl:text-2xl text-white3 font-light mt-8 w-3/4 
+                        2xl:w-3/5'>
                         At Radiant Dental Studio, your well-being is our top priority. We cultivate robust dentist-patient
                         relationships by prioritizing your needs.
                         <br/><br/>

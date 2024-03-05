@@ -6,7 +6,8 @@ const QuestionCard = ({ question, answer, isOpen, onToggle }) => {
     
 
     return (
-        <article className={`gradient-border flex flex-col w-[60rem] gap-2 rounded-lg ${ isOpen ? 'active' : '' }`}>
+        <article className={`gradient-border flex flex-col w-10/12 lg:w-[45rem] 2xl:w-[60rem] gap-2 rounded-lg 
+            ${isOpen ? 'active' : ''}`}>
             <div className="flex justify-between items-center px-12 py-8"
                 onClick={onToggle}>
                 

@@ -31,16 +31,16 @@ const Services = () => {
     return (
         <section className='flex justify-center bg-custom-gradient-bg-right py-2 xl:py-12'>
             <div className="flex flex-col items-center gap-8 relative">
-                <h2 className='text-center text-white3 text-3xl md:text-5xl xl:text-6xl font-bold
-                    w-2/3 md:w-2/4 xl:w-2/4 2xl:w-3/5 pt-2 lg:pt-4' data-aos="fade-up">
+                <h2 className='text-center text-white3 text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold
+                    w-2/3 md:w-2/4 lg:w-3/5 pt-2 lg:pt-4' data-aos="fade-up">
                     Discover Our Exceptional  
                     <span className='app-title' style={{ margin: ' 0 1rem' }}>
                         Dental Services
                     </span>         
                 </h2>
 
-                <p className='text-lg md:text-xl xl:text-2xl text-white3 font-light mt-8 w-3/4 
-                    lg:w-2/4 xl:w-2/4 2xl:w-3/5'
+                <p className='text-lg md:text-xl 2xl:text-2xl text-white3 font-light mt-8 w-3/4 
+                    2xl:w-3/5'
                     data-aos="fade-up"
                 >
                     We provide a wide range of treatments, including cosmetic dentistry. Our commitment is rooted in
