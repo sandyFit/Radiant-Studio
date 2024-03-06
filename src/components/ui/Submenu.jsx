@@ -24,7 +24,9 @@ const Submenu = () => {
             <ul className={` bg-custom-gradient-bg-cards w-[100vw] h-auto duration-500 space-y-auto pl-24 pt-12 pb-16
                 absolute right-0 top-12 z-50 ${isSubmenuOpen ? 'visible' : 'hidden'}`}
             >
-                <h4 className='text-2xl text-white3 font-semibold'>Menu</h4>
+                <h4 className='text-2xl text-white3 font-semibold'>
+                    Menu
+                </h4>
                 <hr className='w-[90%] mt-2'/>
                 <li className='block px-3 py-6 rounded-md text-white3 font-medium space-x-4 mt-8
                     hover:text-slate-400'>

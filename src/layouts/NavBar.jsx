@@ -1,17 +1,11 @@
 import React from 'react';
 import Submenu from '../components/ui/Submenu';
 import MainMenu from '../components/ui/MainMenu';
-import { useNavigate } from 'react-router-dom';
 import Logo from '../components/ui/Logo';
 
 
+
 const NavBar = () => {
-
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate('book-appointment');
-    }
 
 
     return (
@@ -28,7 +22,7 @@ const NavBar = () => {
 
                 {/* Mobile */}
 
-                <Submenu />
+                <Submenu/>
             
             </div>
         </nav>   
